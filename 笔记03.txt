@@ -1,0 +1,24 @@
+#创建本地key
+ssh-keygen -t rsa -c "790866977@qq.com"
+#验证
+ssh -T git@github.com
+#验证用户名
+git config --global user.name "用户名"
+#验证邮箱
+git config --global user.email "邮箱"
+#GIT仓库
+git init
+#添加文件
+git add "文件"
+#文件说明
+git commit -m "描述"
+#
+git remote add origin git@github.com:ywj790866977/test.git
+#
+git push -u origin master
+
+有库之后直接传东西
+
+git add "test2.txt"
+git commit -m "第二个传文件"
+git push -u origin master
